@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://thekrystalship.org/about/</loc>
+    <loc>https://thekrystalship.org/about/</loc>
     <lastmod>2018-07-13T13:03:01+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://thekrystalship.org/posts/</loc>
+    <loc>https://thekrystalship.org/posts/</loc>
     <lastmod>2018-07-13T12:56:17+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://thekrystalship.org/categories/</loc>
+    <loc>https://thekrystalship.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://thekrystalship.org/tags/</loc>
+    <loc>https://thekrystalship.org/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://thekrystalship.org/</loc>
+    <loc>https://thekrystalship.org/</loc>
     <lastmod>2018-07-13T13:03:01+02:00</lastmod>
     <priority>0</priority>
   </url>
