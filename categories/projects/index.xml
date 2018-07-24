@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on The Krystal Ship</title>
+    <link>https://thekrystalship.org/categories/projects/</link>
+    <description>Recent content in Projects on The Krystal Ship</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Jul 2018 16:48:46 +0200</lastBuildDate>
+    
+	<atom:link href="https://thekrystalship.org/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inquisition</title>
+      <link>https://thekrystalship.org/posts/inquisition/</link>
+      <pubDate>Tue, 17 Jul 2018 16:48:46 +0200</pubDate>
+      
+      <guid>https://thekrystalship.org/posts/inquisition/</guid>
+      <description>Inquisition asd</description>
+    </item>
+    
+  </channel>
+</rss>

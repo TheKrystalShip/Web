@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Krystal Ship</title>
-    <link>https://thekrystalship.org/</link>
-    <description>Recent content on The Krystal Ship</description>
+    <title>Projects on The Krystal Ship</title>
+    <link>https://thekrystalship.org/projects/</link>
+    <description>Recent content in Projects on The Krystal Ship</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Jul 2018 10:25:32 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jul 2018 10:23:33 +0200</lastBuildDate>
     
-	<atom:link href="https://thekrystalship.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thekrystalship.org/projects/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Developers</title>
-      <link>https://thekrystalship.org/developers/</link>
-      <pubDate>Tue, 24 Jul 2018 10:25:32 +0200</pubDate>
-      
-      <guid>https://thekrystalship.org/developers/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Inquisition</title>
@@ -27,18 +18,6 @@
       
       <guid>https://thekrystalship.org/projects/inquisition/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://thekrystalship.org/about/</link>
-      <pubDate>Fri, 13 Jul 2018 13:03:01 +0200</pubDate>
-      
-      <guid>https://thekrystalship.org/about/</guid>
-      <description>Welcome to TheKrystalShip website, which is currently under construction.
-Credits  Cover image made by Sam Falla.
- Hugo Theme &amp;lsquo;Coder&amp;rsquo; made by Luiz de Prá.
-  Show these guys some love for their excellent work.</description>
     </item>
     
     <item>
