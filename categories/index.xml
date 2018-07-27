@@ -6,9 +6,28 @@
     <description>Recent content in Categories on The Krystal Ship</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 24 Jul 2018 10:23:33 +0200</lastBuildDate>
     
 	<atom:link href="https://thekrystalship.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.Net Core</title>
+      <link>https://thekrystalship.org/categories/.net-core/</link>
+      <pubDate>Tue, 24 Jul 2018 10:23:33 +0200</pubDate>
+      
+      <guid>https://thekrystalship.org/categories/.net-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discord Bot</title>
+      <link>https://thekrystalship.org/categories/discord-bot/</link>
+      <pubDate>Tue, 24 Jul 2018 10:23:33 +0200</pubDate>
+      
+      <guid>https://thekrystalship.org/categories/discord-bot/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
