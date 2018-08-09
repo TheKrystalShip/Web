@@ -14,7 +14,6 @@ body {
     font-family: 'Fira Mono', monospace;
     font-size: 1.6em;
     font-weight: 400;
-    /* letter-spacing: .0625em; */
     line-height: 1.8em;
 }
 
@@ -73,9 +72,6 @@ h1 {
     h1 {
         font-size: 2.8rem;
         line-height: 2.8rem;
-    }
-    .header .logo {
-        display: none;
     }
 }
 
@@ -249,9 +245,6 @@ img.list-item-banner {
     img.list-item-banner {
         height: 10rem;
     }
-    .header .logo {
-        display: none;
-    }
 }
 
 .navigation ul {
@@ -292,9 +285,6 @@ img.list-item-banner {
         font-size: 2.4rem;
         text-align: center;
         margin-bottom: 10pt;
-    }
-    .header .logo {
-        display: none;
     }
 }
 
@@ -345,9 +335,6 @@ img.list-item-banner {
         font-weight: normal;
         color: ghostwhite;
         text-transform: capitalize;
-    }
-    .header .logo {
-        display: none;
     }
 }
 
@@ -540,7 +527,6 @@ ul {
     display: block;
     padding: 10px 20px;
     border-right: 1px solid #f4f4f4;
-    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -551,9 +537,15 @@ ul {
 .header .logo {
     text-transform: uppercase;
     float: left;
-    font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
+}
+
+/*Hide on super small screens*/
+@media screen and (max-width: 319px){
+    .header .logo {
+        display: none;
+    }
 }
 
 .header .logo .logo-image {
