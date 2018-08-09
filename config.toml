@@ -26,12 +26,6 @@ disqusShortname = "thekrystalship-org" # Enable or disable Disqus.
     # Whether you want to hide copyright and credits in the footer.
     hideCopyright = false
 
-    # Custom CSS
-    custom_css = []
-
-    # RTL support
-    rtl = false
-
     # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
 

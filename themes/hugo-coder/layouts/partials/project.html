@@ -4,7 +4,7 @@
       <h1 class="title">{{ .Title }}</h1>
       <h2 class="date">Published on {{ .Date.Format "January 2, 2006" }}</h2>
       {{ if .Params.Author }}
-      <h2 class="date">
+      <h2 class="author">
         <a href="/developers/{{ .Params.Author }}">{{ .Params.Author }}</a>
       </h2>
       {{ end }} {{ if eq .Params.math "true" }}
