@@ -668,3 +668,8 @@ ul {
 #scrollToTop:hover {
     background-color: var(--secondary);
 }
+
+.info {
+    text-transform: uppercase;
+    color: firebrick;
+}

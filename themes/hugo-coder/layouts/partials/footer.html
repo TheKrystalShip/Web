@@ -1,8 +1,0 @@
-<footer class="footer">
-    <button onclick="topFunction()" id="scrollToTop" title="Go to top">&uArr;</button>
-    <section class="container">
-        {{ with .Site.Params.footercontent }}
-        <p>{{.}}</p>
-        {{ end }} {{ if not .Site.Params.hideCopyright }} © {{ .Site.LastChange.Format "2006" }} {{ .Site.Title }} {{ end }}
-    </section>
-</footer>

@@ -1,0 +1,21 @@
+<section class="container list">
+  <h1 class="title">{{ .Title }}</h1>
+  <ul>
+    {{ range .Paginator.Pages }}
+    <div class="project-list-item">
+      <a href="{{ .URL }}">
+        <li>
+          {{ if .Params.Banner }}
+            <img class="list-item-banner" src="{{ .Params.Banner }}" />
+          {{ end }}
+          <span class="list-item-date">{{ .Date.Format "January 2, 2006"}}</span>
+          <span class="list-item-separator"> | </span>
+          <span class="list-item-title">{{ .Title }}</span>
+        </li>
+      <a/>
+    </div>
+    <hr>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>

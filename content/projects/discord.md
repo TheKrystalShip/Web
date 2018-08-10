@@ -2,7 +2,7 @@
 title = "Discord"
 date = 2018-08-07T14:57:07+02:00
 banner = "images/logo.png"
-author = "heisenberg"
+authorProfile = "developers/heisenberg"
 draft = false
 slug = ""
 tags = ["discord", "library", "api", "wrapper"]
