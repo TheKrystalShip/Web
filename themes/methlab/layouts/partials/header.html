@@ -1,12 +1,16 @@
 <header class="header">
-    <a href="/" class="logo">
-      <!-- <img src="images/TKS.png" alt="The Krystal Ship" title="TheKrystalShip"> --> {{ .Site.Title }}
-    </a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn">
-        <span class="navicon"></span>
-    </label>
-    <ul class="navbar-items">
+  <nav class="navbar">
+    <a id="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <div class="tabs">
+        {{ with .Site.Menus.navbar }}
+          {{ range sort .}}
+            <a href="{{ .URL | absURL}}">{{ .Name }}</a>
+          {{ end }}
+        {{ end }}
+    </div>
+  </nav>
+
+    <!-- <ul class="navbar-items">
         <li class="navbar-item navbar-item-home">
           <a class="navbar-item-link" href="/">Home</a>
         </li>
@@ -35,5 +39,11 @@
           {{ end }}
         {{ end }}
       {{ end }}
-    </ul>
+    </ul> -->
+
+    <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+    </label> -->
+
 </header>

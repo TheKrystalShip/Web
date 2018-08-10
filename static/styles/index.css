@@ -1,5 +1,7 @@
 html {
     --primary: #1EAEDB;
+    --dark: #222222;
+    --background-light: #EEEEEE;
 }
 
 .home-title {
@@ -22,33 +24,117 @@ html {
     max-width: 100%;
 }
 
-.fill-test {
-    min-width: 100%;
-    min-height: 100%;
+nav {
     width: 100%;
-    height: 100%;
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     box-sizing: border-box;
-    background-color: firebrick;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
-.project {
-
+nav a {
+    float: left;
+    padding: 15px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--dark);
 }
-.project-article {
 
+nav a:hover {
+    background-color: var(--background-light);
 }
-.project-article-header {
 
+nav a#logo {
+    font-size: 15px;
+    text-shadow: 1px 1px 2px #c4c4c4;
 }
-.project-title {
 
-}
-.project-publish-date {
+@media (min-width: 400px) {
+    /* Larger than mobile */
+    nav a#logo {
+        font-size: 18px;
+    }
 
-}
-.project-author {
+    /* Larger than phablet (also point when grid becomes active) */
+    /* @media (min-width: 550px) {
+        nav a#logo {
+            font-size: 22px;
+        }
+    } */
 
-}
-.project-comments {
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+        nav a#logo {
+            font-size: 26px;
+        }
+    }
 
+    /* Larger than desktop */
+    @media (min-width: 1000px) {
+        nav a#logo {
+            font-size: 28px;
+        }
+    }
+
+    /* Larger than Desktop HD */
+    @media (min-width: 1200px) {
+        nav a#logo {
+            font-size: 30px;
+        }
+    }
 }
+
+.footer {
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.layered-paper {
+    background: var(--background-light);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
+                0 10px 0 -5px var(--background-light), /* The second layer */
+                0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+                0 20px 0 -10px var(--background-light), /* The third layer */
+                0 20px 1px -9px rgba(0, 0, 0, 0.15); /* The third layer shadow */
+}
+
+/* .project {}
+
+.project-article {}
+
+.project-article-header {}
+
+.project-title {}
+
+.project-publish-date {}
+
+.project-author {}
+
+.project-comments {} */
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
