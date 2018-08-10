@@ -164,6 +164,7 @@ a.badge:hover {
     font-size: 14px;
     color: white;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 .project-author:hover {
