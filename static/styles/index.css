@@ -1,7 +1,8 @@
 html {
-    --primary: #1EAEDB;
+    --primary: #47A6BC;
     --dark: #222222;
     --background-light: #EEEEEE;
+    --card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .home-title {
@@ -14,6 +15,7 @@ html {
 }
 
 .home-banner {
+    margin-top: 5rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -59,28 +61,24 @@ nav a#logo {
     nav a#logo {
         font-size: 18px;
     }
-
     /* Larger than phablet (also point when grid becomes active) */
-    /* @media (min-width: 550px) {
+    @media (min-width: 550px) {
         nav a#logo {
             font-size: 22px;
         }
-    } */
-
+    }
     /* Larger than tablet */
     @media (min-width: 750px) {
         nav a#logo {
             font-size: 26px;
         }
     }
-
     /* Larger than desktop */
     @media (min-width: 1000px) {
         nav a#logo {
             font-size: 28px;
         }
     }
-
     /* Larger than Desktop HD */
     @media (min-width: 1200px) {
         nav a#logo {
@@ -97,27 +95,103 @@ nav a#logo {
 }
 
 .layered-paper {
-    background: var(--background-light);
+    background-color: var(--background-light);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
+    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    /* The third layer shadow */
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
+    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    /* The third layer shadow */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
-                0 10px 0 -5px var(--background-light), /* The second layer */
-                0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
-                0 20px 0 -10px var(--background-light), /* The third layer */
-                0 20px 1px -9px rgba(0, 0, 0, 0.15); /* The third layer shadow */
+    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    /* The third layer shadow */
 }
 
-/* .project {}
+.project {}
 
-.project-article {}
+.project-article {
+    box-sizing: border-box;
+}
 
-.project-article-header {}
+.project-article-header {
+    background-color: var(--primary);
+    box-shadow: var(--card);
+    padding: 1.5rem 1rem;
+}
+
+.project-meta {
+    text-align: left;
+}
+
+.project-tags {
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 0.8rem;
+}
+
+a.badge {
+    color: white;
+    background-color: var(--dark);
+    padding: 1px 4px;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-decoration: none;
+}
+
+a.badge:hover {
+    color: var(--primary);
+}
 
 .project-title {}
 
-.project-publish-date {}
+.project-publish-date {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
 
-.project-author {}
+.project-author {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
 
-.project-comments {} */
+.project-author:hover {
+    color: var(--dark);
+}
+
+.project-article-content {
+    padding: 1.5rem 1rem;
+    text-align: justify;
+}
+
+.project-comments {
+    margin-top: 2rem;
+}
+
+.project-list {
+    list-style: none;
+}
+
+.list-item-banner {
+    object-fit: cover;
+    object-position: center;
+    height: 20rem;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
 
 /* Larger than mobile */
 
