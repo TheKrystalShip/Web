@@ -1,0 +1,238 @@
+html {
+    --primary: #47A6BC;
+    --dark: #222222;
+    --background-light: #EEEEEE;
+    --card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.home-title {
+    text-align: center;
+}
+
+.home-subtitle {
+    color: firebrick;
+    text-align: center;
+}
+
+.home-banner {
+    margin-top: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.home-banner-image {
+    width: 60rem;
+    max-width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    float: left;
+    padding: 15px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--dark);
+}
+
+nav a:hover {
+    background-color: var(--background-light);
+}
+
+nav a#logo {
+    font-size: 15px;
+    text-shadow: 1px 1px 2px #c4c4c4;
+}
+
+@media (min-width: 400px) {
+    /* Larger than mobile */
+    nav a#logo {
+        font-size: 18px;
+    }
+    /* Larger than phablet (also point when grid becomes active) */
+    @media (min-width: 550px) {
+        nav a#logo {
+            font-size: 22px;
+        }
+    }
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+        nav a#logo {
+            font-size: 26px;
+        }
+    }
+    /* Larger than desktop */
+    @media (min-width: 1000px) {
+        nav a#logo {
+            font-size: 28px;
+        }
+    }
+    /* Larger than Desktop HD */
+    @media (min-width: 1200px) {
+        nav a#logo {
+            font-size: 30px;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.layered-paper {
+    background-color: var(--background-light);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
+    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    /* The third layer shadow */
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
+    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    /* The third layer shadow */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
+    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+    /* The third layer shadow */
+}
+
+.project {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.project-article {
+    box-sizing: border-box;
+}
+
+.project-article-header {
+    background-color: var(--primary);
+    box-shadow: var(--card);
+    padding: 1.5rem 1rem;
+}
+
+.project-meta {
+    text-align: left;
+}
+
+.project-tags {
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 0.8rem;
+}
+
+a.badge {
+    color: white;
+    background-color: var(--dark);
+    padding: 1px 4px;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-decoration: none;
+}
+
+a.badge:hover {
+    color: var(--primary);
+}
+
+.project-title {}
+
+.project-publish-date {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.project-author {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.project-author:hover {
+    color: var(--dark);
+}
+
+.project-article-content {
+    padding: 1.5rem 1rem;
+    text-align: justify;
+}
+
+.project-comments {
+    margin-top: 2rem;
+}
+
+.project-list {
+    list-style: none;
+}
+
+.navigators {
+    padding-top: 25px;
+    width: 100%;
+    max-height: 2rem;
+}
+
+.navigator {
+    padding: 1px 4px;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-decoration: none;
+}
+
+.prev-navigator,
+.next-navigator {
+
+}
+
+.list-item-banner {
+    object-fit: cover;
+    object-position: center;
+    height: 20rem;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
