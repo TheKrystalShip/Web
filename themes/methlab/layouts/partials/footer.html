@@ -4,6 +4,6 @@
         {{ with .Site.Params.footercontent }}
             <p>{{.}}</p>
         {{ end }}
-        {{ if not .Site.Params.hideCopyright }} © {{ .Site.LastChange.Format "2006" }} {{ .Site.Title }} {{ end }}
+        &copy; {{ .Site.Copyright }} - {{ .Site.Title }}
     </section>
 </footer>

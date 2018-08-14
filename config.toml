@@ -2,10 +2,10 @@ baseURL = "https://thekrystalship.org"
 languageCode = "en-us"
 title = "The Krystal Ship"
 theme = "methlab"
+copyright = "2018"
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
 enableEmoji = true # :100:
-enableGitInfo = true # Site is managed by Git VC
 enableRobotsTXT = true # Help google out a bit
 refLinksNotFoundURL = "404.html" # Use custom 404 page
 
@@ -23,11 +23,6 @@ disqusShortname = "thekrystalship-org" # Enable or disable Disqus.
     description = "The Krystal Ship organization website" # Site description.
     keywords = "blog,developer,personal,coding" # Site keywords.
     avatarurl = "images/logo.png" # Contain the path of the optional avatar in the static folder.
-
-    # footercontent = "Enter a text here." # Add footer content
-
-    # Whether you want to hide copyright and credits in the footer.
-    hideCopyright = false
 
     # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
