@@ -1,15 +1,22 @@
-<div class="row">
-	<section class="project">
-		<article class="project-article">
-			{{ partial "project/header.html" . }}
-			<div class="project-article-content layered-paper">
-				{{ .Content | emojify }}
+<section class="project">
+	<div class="container">
+		<section class="hero">
+			<div class="twelve colummns">
+				{{ partial "project/hero.html" . }}
 			</div>
-		</article>
-
-		<div class="project-comments">
-			{{ if and (not (eq .Site.DisqusShortname "" )) (eq (.Params.disable_comments | default false) false)}} {{ partial "disqus.html" . }} {{ end }}
-		</div>
-
-	</section>
-</div>
+		</section>
+		<section class="article">
+			<article class="project-article">
+				<div class="project-article-content layered-paper">{{ .Content | emojify }}</div>
+			</article>
+		</section>
+		<section class="navigation">
+			{{ partial "navigation/single.html" . }}
+		</section>
+		<section class="comments">
+			<div class="project-comments">
+				{{ if and (not (eq .Site.DisqusShortname "" )) (eq (.Params.disable_comments | default false) false)}} {{ partial "disqus.html" . }} {{ end }}
+			</div>
+		</section>
+	</div>
+</section>

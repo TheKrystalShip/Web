@@ -1,9 +1,12 @@
-<footer class="footer">
-    <button class="button" onclick="topFunction()" id="scrollToTop" title="Go to top">&uArr;</button>
-    <section class="container">
-        {{ with .Site.Params.footercontent }}
-            <p>{{.}}</p>
-        {{ end }}
-        &copy; {{ .Site.Copyright }} - {{ .Site.Title }}
-    </section>
-</footer>
+<section class="footer">
+    <footer>
+        <div class="container">
+            <div class="twelve columns">
+                <p>
+                    &copy; {{ .Date.Format "2006" }} - {{ .Site.Title }}
+                </p>
+                <button class="button" onclick="backToTop()" id="scrollToTop" title="Go to top">&uArr;</button>
+            </div>
+        </div>
+    </footer>
+</section>

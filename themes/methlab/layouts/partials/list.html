@@ -5,8 +5,8 @@
     <div class="project-list-item">
       <a href="{{ .URL }}">
         <li>
-          {{ if .Params.Banner }}
-            <img class="list-item-banner" src="{{ .Params.Banner }}" />
+          {{ with .Params.Banner }}
+            <img class="list-item-banner" src="{{ . | absURL }}" />
           {{ end }}
           <span class="list-item-date">{{ .Date.Format "January 2, 2006"}}</span>
           <span class="list-item-separator"> | </span>

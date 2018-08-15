@@ -1,12 +1,12 @@
 +++
+draft = false
+date = 2018-08-14T12:40:27+02:00
 title = "Discord"
-date = 2018-08-07T14:57:07+02:00
 banner = "images/logo.png"
 author = "heisenberg"
-draft = false
-slug = ""
-tags = ["discord", "library", "api", "wrapper"]
-categories = ["Discord", ".Net Standard", "API", "Library"]
+slug = "discord-api-wrapper-library"
+tags = ["discord", "api", "wrapper"]
+categories = ["discord", "library", "wrapper", "api", ".net standard 2.0"]
 +++
 
 [TheKrystalShip.Discord](https://github.com/TheKrystalShip/Discord) is an API wrapper library written in C# targetting .Net Standard 2.0 for Discord, with the purpose of making Discord bots.

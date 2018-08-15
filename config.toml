@@ -1,4 +1,4 @@
-baseURL = "https://thekrystalship.org"
+baseURL = ""
 languageCode = "en-us"
 title = "The Krystal Ship"
 theme = "methlab"
@@ -22,10 +22,14 @@ disqusShortname = "thekrystalship-org" # Enable or disable Disqus.
     subtitle = "Under Construction" # Author's job title or info.
     description = "The Krystal Ship organization website" # Site description.
     keywords = "blog,developer,personal,coding" # Site keywords.
-    avatarurl = "images/logo.png" # Contain the path of the optional avatar in the static folder.
+    avatarurl = "images/logo.svg" # Contain the path of the optional avatar in the static folder.
 
     # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
+    customCssFiles = ["styles/index.css"] # Load custom css file
+    customJsFiles = ["scripts/index.js"] # Load custom scripts
+    favicons = []
 
 # Social links
 [[params.social]]
@@ -36,10 +40,6 @@ disqusShortname = "thekrystalship-org" # Enable or disable Disqus.
    name = "Discord"
    weight = 2
    url = "https://discord.gg/pvm9NAv"
-#[[params.social]]
-#    name = "LinkedIn"
-#    weight = 3
-#    url = "https://www.linkedin.com/in/johndoe/"
 
 # Navbar links
 [[menu.navbar]]
