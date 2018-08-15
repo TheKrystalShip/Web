@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://thekrystalship.org"
 languageCode = "en-us"
 title = "The Krystal Ship"
 theme = "methlab"
@@ -29,7 +29,7 @@ disqusShortname = "thekrystalship-org" # Enable or disable Disqus.
 
     customCssFiles = ["styles/index.css"] # Load custom css file
     customJsFiles = ["scripts/index.js"] # Load custom scripts
-    favicons = []
+    favicons = ["images/favicon.svg"]
 
 # Social links
 [[params.social]]
@@ -45,17 +45,17 @@ disqusShortname = "thekrystalship-org" # Enable or disable Disqus.
 [[menu.navbar]]
     name = "Projects"
     weight = 1
-    url  = "/projects/"
+    url  = "projects/"
 [[menu.navbar]]
     name = "Categories"
     weight = 2
-    url = "/categories/"
+    url = "categories/"
 [[menu.navbar]]
     name = "Developers"
     weight = 3
-    url = "/developers/"
+    url = "developers/"
 [[menu.navbar]]
     name = "About"
     weight = 4
-    url = "/about/"
+    url = "about/"
 
