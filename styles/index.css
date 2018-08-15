@@ -3,6 +3,7 @@ html {
     --dark: #222222;
     --background-light: #EEEEEE;
     --card: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --accent: #EEEEEE;
 }
 
 .home-title {
@@ -19,23 +20,32 @@ html {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .home-banner-image {
-    width: 60rem;
-    max-width: 100%;
+    width: 100%;
+    max-width: 60em;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header>nav>.container {
+    margin-top: 0;
+}
+
+.container {
+    margin-top: 5rem;
 }
 
 nav {
-    width: 100%;
-    height: 5rem;
+    overflow: auto;
     background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
+    box-shadow: var(--card);
 }
 
 nav a {
@@ -55,6 +65,7 @@ nav a:hover {
 nav a#logo {
     font-size: 15px;
     text-shadow: 1px 1px 2px #c4c4c4;
+    padding-left: 1rem;
 }
 
 @media (min-width: 400px) {
@@ -96,30 +107,29 @@ nav a#logo {
 }
 
 .layered-paper {
-    background-color: var(--background-light);
+    background-color: var(--accent);
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
-    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 0 -5px var(--accent), /* The second layer */
     0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
-    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 0 -10px var(--accent), /* The third layer */
     0 20px 1px -9px rgba(0, 0, 0, 0.15);
     /* The third layer shadow */
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
-    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 0 -5px var(--accent), /* The second layer */
     0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
-    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 0 -10px var(--accent), /* The third layer */
     0 20px 1px -9px rgba(0, 0, 0, 0.15);
     /* The third layer shadow */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
-    0 10px 0 -5px var(--background-light), /* The second layer */
+    0 10px 0 -5px var(--accent), /* The second layer */
     0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
-    0 20px 0 -10px var(--background-light), /* The third layer */
+    0 20px 0 -10px var(--accent), /* The third layer */
     0 20px 1px -9px rgba(0, 0, 0, 0.15);
     /* The third layer shadow */
 }
 
-.project {
-    margin: 0 auto;
-    max-width: 1024px;
+section.project {
+    margin-top: -5px;
 }
 
 .project-article {
@@ -134,12 +144,16 @@ nav a#logo {
 
 .project-meta {
     text-align: left;
+    margin-top: 2rem;
 }
 
 .project-tags {
-    text-align: right;
-    box-sizing: border-box;
-    padding-top: 0.8rem;
+    /* float: right; */
+    margin-bottom: 1rem;
+}
+
+.project-tags > a {
+    text-transform: capitalize;
 }
 
 a.badge {
@@ -157,14 +171,21 @@ a.badge:hover {
     color: var(--primary);
 }
 
-.project-title {}
+.project-title {
+    font-weight: lighter;
+    margin-bottom: 0;
+}
 
 .project-publish-date {
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
 }
 
 .project-author {
+    margin-bottom: 1rem;
+}
+
+.project-author > a {
     font-size: 14px;
     color: white;
     text-decoration: none;
@@ -180,32 +201,17 @@ a.badge:hover {
     text-align: justify;
 }
 
+.project-article-content>p {
+    line-height: 2.5rem;
+}
+
 .project-comments {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    /* border: 1px solid red; */
 }
 
 .project-list {
     list-style: none;
-}
-
-.navigators {
-    padding-top: 25px;
-    width: 100%;
-    max-height: 2rem;
-}
-
-.navigator {
-    padding: 1px 4px;
-    border-radius: 2px;
-    text-align: center;
-    margin-left: 1px;
-    margin-right: 1px;
-    text-decoration: none;
-}
-
-.prev-navigator,
-.next-navigator {
-
 }
 
 .list-item-banner {
@@ -216,6 +222,50 @@ a.badge:hover {
     background-color: var(--white);
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.navigation {
+    margin-top: 2rem;
+    width: 100%;
+    clear: both;
+    overflow: auto;
+}
+
+.navigation>.navigators {
+    overflow: auto;
+    clear: both;
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    height: 40px;
+    padding: 0 10px;
+    color: white;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 40px;
+    letter-spacing: 0;
+    background-color: var(--primary);
+    border-radius: 2px;
+    /* border: 1px solid #bbb; */
+    border: none;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+    color: var(--dark);
+}
+
+.button-navigator {
+    margin-bottom: 0;
+}
+
+button#scrollToTop {
+    position: fixed;
+    display: none;
+    right: 25px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
 }
 
 /* Larger than mobile */
