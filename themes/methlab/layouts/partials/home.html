@@ -1,0 +1,22 @@
+<section class="home">
+    <div class="container">
+        <div class="twelve columns">
+            {{ with .Site.Params.avatarurl }}
+            <div class="home-banner">
+                <img class="home-banner-image" src="{{ . | absURL }}" title="Banner Image">
+            </div>
+            {{ end }}
+            <h1 class="home-title">{{ .Site.Title }}</h1>
+            <h2 class="home-subtitle">{{ .Site.Params.subtitle }}</h2>
+            <!-- {{ with .Site.Params.social }}
+          <ul>
+              {{ range sort .}}
+              <li>
+              <a href="{{ .url }}">{{ .name }}</a>
+              </li>
+              {{ end }}
+          </ul>
+          {{ end }} -->
+        </div>
+    </div>
+</section>

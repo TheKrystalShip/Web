@@ -1,0 +1,14 @@
+name = "Methlab"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Mobile first, modern Hugo theme based on Skeleton"
+homepage = "https://github.com/TheKrystalShip"
+tags = [
+  "responsive",
+  "simple",
+  "clean"
+]
+features = [
+  "pagination",
+  "single-column",
+]

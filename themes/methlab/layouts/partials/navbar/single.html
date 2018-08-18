@@ -1,0 +1,12 @@
+<div id="topnav" class="topnav">
+    <div class="logo u-pull-left">
+        <a id="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </div>
+    {{ with .Site.Menus.navbar }}
+    <div class="tabs u-pull-right">
+        {{ range sort .}}
+        <a href="{{ .URL | absURL}}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>

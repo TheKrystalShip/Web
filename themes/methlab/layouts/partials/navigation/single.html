@@ -1,0 +1,20 @@
+<div class="navigators">
+    {{ with .PrevInSection }}
+    <div class="u-pull-left">
+        <a href="{{ .Permalink }}">
+            <button class="button button-navigator">
+                &lt; {{ .Title }}
+            </button>
+        </a>
+    </div>
+    {{ end }}
+    {{ with .NextInSection }}
+    <div class="u-pull-right">
+        <a href="{{ .Permalink }}">
+            <button class="button button-navigator">
+                {{ .Title }} &gt;
+            </button>
+        </a>
+    </div>
+    {{ end }}
+</div>

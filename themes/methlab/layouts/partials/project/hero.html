@@ -1,0 +1,18 @@
+<header class="project-article-header">
+    <h1 class="project-title">{{ .Title }}</h1>
+    <div class="project-meta">
+        {{ with .Params.Categories }}
+        <div class="project-tags">
+            {{ range sort . }}
+            <a class="badge" href="categories/{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
+        <p class="project-publish-date">Published on {{ .Date.Format "January 2, 2006" }}</p>
+        {{ with .Params.Author }}
+        <p class="project-author">
+            By <a href="developers/{{ . | urlize }}">{{ . }}</a>
+        </p>
+        {{ end }}
+    </div>
+</header>
